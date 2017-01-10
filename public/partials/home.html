@@ -1,0 +1,10 @@
+<p>
+    <a href="/#/add-item">Add an Item</a>
+</p>
+<ul>
+    <li ng-repeat='item in items'>
+        <a href="/#/item/{{item._id}}">
+            {{item.title}}
+        </a>
+    </li>
+</ul>

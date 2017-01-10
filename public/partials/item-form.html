@@ -1,0 +1,21 @@
+<h1>Add an Item</h1>
+
+<form>
+    <div class="form-group">
+        <label>Title</label>        
+        <input class="form-control" ng-model="item.title"></input>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" ng-model="item.description"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Start Price</label>        
+        <input class="form-control" ng-model="item.startprice"></input>
+    </div>
+    <div class="form-group">
+        <label>Duration (Minutes)</label>        
+        <input class="form-control" ng-model="item.endtime"></input>
+    </div>
+    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input> 
+</form>

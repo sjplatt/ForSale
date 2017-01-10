@@ -1,0 +1,20 @@
+<h1>View Item</h1>
+<ul>
+    <li>Title: {{item.title}}</li>
+    <li>Description: {{item.description}}</li>
+    <li>Start Price: {{item.start_price}}</li>
+    <li>Start Time: {{item.start_time}}</li>
+    <li>End Time: {{item.end_time}}</li>
+    <li>Bids: {{item.bids}}</li>
+    <li> Comments: </li>
+    <ul>
+        <form>
+            <div class="form-group">
+                <label>Add Comment</label>
+                <textarea class="form-control" ng-model="comment.description"></textarea>
+            </div>
+            <input type="button" class="btn btn-primary" value="Add" ng-click="saveComment()"></input> 
+        </form>
+        <li ng-repeat='comment in item.comments'> {{comment}} </li>
+    </ul>
+</ul>
